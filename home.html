@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:530px)" href="phone.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+        <div class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav> 
+
+    <section id="home">
+        <div class="nain">
+            <h1 class="headings">I AM <br> Ahmed Oluwatosin Ogunbiyi</h1>
+            <button class="btn">
+                Hire me
+            </button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1 class="headings"> ABOUT ME</h1>
+        <div id="pic">
+            <img src="portfolio/4.jpg" alt="">
+            <div id="intro">
+                <h2>Ahmed Oluwatosin Ogunbiyi</h2>
+                <p> I am a website designer who loves to create amazing website. I am a curious person, always want to know
+                    more and ready to ask questions about how certain things are done. I am a person of determination,
+                    understanding, team player, tenacious and of great productivity.
+                    I love using reactjs to build web app. i am looking forward to gain more knowledge and have better
+                    understanding of it.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h1 class="headings">PORTFOLIO</h1>
+        <div class="gallery">
+            <img src="portfolio/1.jpg" alt="">
+            <img src="portfolio/2.jpg" alt="">
+            <img src="portfolio/3.jpg" alt="">
+            <img src="portfolio/4.jpg" alt="">
+            <img src="portfolio/5.png" alt="">
+            <img src="portfolio/6.png" alt="">
+        </div>
+    </section>
+
+    <section id="services">
+        <h1 class="headings">SERVICES</h1>
+        <div class="row">
+            <div class="box">
+                <img src="services/dev.png" alt="">
+                <h1 class="headings">Website Design </h1>
+                <p>I am website designer and proficient in using HTML, CSS and JAVASCRIPT. I'm also good with Reactjs and getting myself to using React native to build mobile website</p>
+            </div>
+            <div class="box">
+                <img src="services/f1.png" alt="">
+                <h1 class="headings">Ux/Ui <br> Design </h1>
+                <p>I am an interface designer and proficient in using Figma and Adobe Xd. I have experience using Adobe photoshop and Illustrator.</p>
+            </div>
+            <div class="box">
+                <img src="services/dat.png" alt="">
+                <h1 class="headings">Data <br> Scientist </h1>
+                <p>I am Data Scientist who loves to gain knowledge and understanding from structured and unstructured data.
+                Loves using my skills in technology to explore and manage data.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="headings">CONTACT ME</h1>
+        <form action="" class="form">
+            <input type="text" name="name" class="input" placeholder="Enter your name">
+            <input type="email" name="email" class="input" placeholder="Enter your Email">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter your message"></textarea>
+            <input type="submit" value="SEND" id="send">
+        </form>
+    </section>
+
+    <script>
+        let mainNav = document.getElementById("js-menu");
+        let navBarToggle = document.getElementById("js-navbar-toggle");
+
+        navBarToggle.addEventListener("click", function() {
+        mainNav.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
